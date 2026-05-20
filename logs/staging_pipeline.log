@@ -1,0 +1,9 @@
+2026-05-19 11:28:26,602 - INFO - 🚀 Starting Staging Layer ingestion pipeline...
+2026-05-19 11:28:26,606 - INFO - Targeting source CSV file: darkom-annonces.csv
+2026-05-19 11:28:26,618 - INFO - Successfully read CSV. Found 1508 rows and 13 columns.
+2026-05-19 11:28:26,675 - INFO - Attempting to push data to schema 'staging', table 'raw_listings'...
+2026-05-19 11:28:26,759 - INFO - Data block successfully transmitted to PostgreSQL.
+2026-05-19 11:28:26,759 - INFO - Running post-load integrity checks...
+2026-05-19 11:28:26,762 - INFO - Integrity Check: Source CSV Rows = 1508 | Target DB Rows = 1508
+2026-05-19 11:28:26,762 - INFO - 🎉 SUCCESS! Integrity check passed. Row counts match perfectly.
+2026-05-19 11:28:26,763 - INFO - 🏁 Staging Layer pipeline run finished.

@@ -1,0 +1,4 @@
+2026-05-19 12:26:55,786 - INFO - Extracting raw records from staging.raw_listings...
+2026-05-19 12:26:55,804 - ERROR - Failed to extract staging data: (psycopg2.OperationalError) connection to server at "localhost" (::1), port 5433 failed: FATAL:  password authentication failed for user "postgres"
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

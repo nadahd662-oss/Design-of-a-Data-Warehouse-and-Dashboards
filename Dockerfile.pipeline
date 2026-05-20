@@ -1,0 +1,20 @@
+# Using slim keeps your image size small while providing standard python
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# System dependencies for compiling components if needed
+RUN apt-get update && apt-get install -y \
+    gcc \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copies your entire local darkom directory (including data/ and staging.py) into /app
+COPY . .
+
+# Run the script directly from the root working directory
+CMD ["python", "script/staging.py"]
